@@ -1,0 +1,71 @@
+#reach-us
+   overflow-x: hidden
+   +position(relative)
+      
+   .map      
+      iframe
+         +size(100% 500px)
+         border: 0px
+         +display(block)
+      
+   .contact-flex
+      +position(relative)
+      overflow: hidden
+      padding: 3rem 1rem
+      margin-bottom: -1.5rem
+      
+      .contact-flexitem-flex
+         margin-bottom: 1.5rem
+         text-align: center
+         padding: 0px
+         
+         .img
+            +display(inline-block)
+            +size(60px)
+            text-align: center
+            white-space: nowrap
+               
+            &:before
+               content: ''
+               height: 100%
+               +display(inline-block)
+               vertical-align: middle
+                        
+            svg
+               +size(42px)
+               vertical-align: middle
+               fill: $color-alt
+               
+         .text
+            +flex(1 1 auto)
+            padding: .5rem
+            margin: 0px
+            color: $color-sub
+            background-color: $color-main
+      
+@media screen and (min-width: 768px)
+   #reach-us
+      .contact-flex
+         +position(absolute, 0px 0px 0px null)
+         +size(350px auto)
+         +display(flex)
+         +flex-direction(column)
+         +justify-content(center)
+         padding: 0px
+
+         .contact-flexitem-flex
+            +display(flex)
+            +align-items(center)
+            margin: 1rem 0px
+            padding: .4rem 0px .4rem .4rem
+            background-color: $color-alt
+            border:
+               width: 1px 0px 1px 1px
+               style: dashed
+               color: $color-main
+
+            .img
+               margin-right: .3rem
+
+               svg
+                  fill: $color-main

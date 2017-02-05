@@ -1,0 +1,40 @@
+#asset
+   .asset-container
+      
+      .asset-flex
+         padding: 1rem 0px 0px
+         +display(flex)
+         +justify-content(space-around)
+            
+         .asset-flexitem
+            text-align: center
+
+            .value
+               color: $color-alt
+               +size(50px)
+               +position(relative)
+               +display(inline-block)
+               line-height: 50px
+               
+               &:before
+                  content: ''
+                  z-index: -1
+                  border: 1px dashed $color-alt
+                  +transform(rotate(45deg))
+                  +position(absolute, 0px 0px 0px 0px)
+               
+            .key
+               margin: 1.1rem 0px 0px
+               color: $color-sub
+               
+@media screen and (min-width: 768px)
+   #asset
+      .asset-container
+         .asset-flex
+            .asset-flexitem
+               .value
+                  +size(80px)
+                  line-height: 80px
+
+               .key
+                  margin: 1.5rem 0px 0px

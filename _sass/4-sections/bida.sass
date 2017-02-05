@@ -1,0 +1,43 @@
+#bida
+   height: 420px
+   background:
+      image: url('../img/bida-bg.png')
+      size: 800px auto
+      position: center top
+      repeat: no-repeat
+   
+   .bida-container      
+      .title
+         margin-bottom: 1.8rem
+         
+      .avail
+         @extend h1
+         margin-top: .2rem
+         +display(inline-block)
+         padding: .5rem 1.5rem .3rem
+         font-weight: 400
+         line-height: 1
+         text-transform: uppercase
+         border: 1px solid $color-main
+         
+@media screen and (min-width: 768px)
+   #bida
+      padding-top: 4.1rem
+      height: 700px
+      background:
+         size: cover
+
+      .bida-container
+         padding-top: 4rem
+         
+         .title
+            margin-bottom: 2.5rem
+
+         .avail
+            margin-top: 1.5rem
+            padding: .6rem 1.8rem .4rem
+               
+            &:hover
+               background-color: $color-main
+               color: $color-alt-dark
+

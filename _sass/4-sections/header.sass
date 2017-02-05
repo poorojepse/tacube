@@ -1,0 +1,71 @@
+.sticky-nav
+   background-color: $color-alt-dark
+   +position(relative)
+   border-bottom: 1px solid $color-main
+
+   .nav-container
+      padding: 1rem 1rem .5rem
+
+      .nav-flex
+         +display(flex)
+         +flex-wrap(wrap)
+         +align-items(center)
+
+         .banner
+            +flex(1 1 auto)
+            height: 50px
+
+            img
+               +size(auto 100%)
+
+         .social
+
+            .social-item
+               +display(block)
+               height: 35px
+               float: left
+               margin-left: 15px
+               background-color: $color-main
+               border: 1px solid $color-main
+
+               svg
+                  +size(auto 100%)
+
+         .nav-menu-flexitem-flex
+            +flex(0 1 100%)
+            +display(flex)
+            +justify-content(space-around)
+            margin: 1.8rem 10% 0px
+
+            &.menu-flex
+
+            .nav-item
+               +display(block)
+               border-bottom: 1px solid transparent
+                              
+@media screen and (min-width: 768px)
+   .sticky-nav
+      z-index: 2
+      +position(fixed, 0px 0px null 0px)
+      background-color: rgba(black, .2)
+   
+      .nav-container
+         padding: .5rem 1rem
+
+         .nav-flex
+            .social
+               padding-right: 40px
+               border-right: 1px solid $color-main
+
+            .nav-menu-flexitem-flex
+               +flex-basis(400px)
+               +justify-content(space-between)
+               padding-top: 5px
+               padding-left: 40px
+               margin: 0px
+                     
+               .nav-item
+                  &:hover
+                     border-bottom-color: $color-main
+
+               

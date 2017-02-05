@@ -1,0 +1,17 @@
+ul
+   padding: 0px
+   list-style-type: none
+   
+   li
+      padding-left: 18px
+      +position(relative)
+      
+      &:before
+         content: ''
+         +position(absolute, null null null 0px)
+         background:
+            image: url('../img/check.gif')
+            size: 100% auto
+            position: center center
+            repeat: no-repeat
+         +size(15px 100%)

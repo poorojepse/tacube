@@ -1,0 +1,71 @@
+#plus
+   .plus-container
+
+      .plus-flex
+         +display(block)
+
+         .plus-flexitem-flex
+            +display(flex)
+            margin: 1rem 0px 2.2rem
+
+            .img
+               +flex(0 0 55px)
+               text-align: center
+               white-space: nowrap
+               
+               &:before
+                  content: ''
+                  height: 100%
+                  vertical-align: middle
+                  +display(inline-block)
+                                 
+               svg
+                  +size(46px)
+                  vertical-align: middle
+                  fill: $color-sub
+
+            .text
+               margin-left: 10px
+               
+               h3
+                  color: $color-alt
+                  margin-bottom: .1rem
+                  
+               p
+                  margin: 0px
+                  
+         .clock .img svg
+            +size(40px)
+
+@media screen and (min-width: 600px)
+   #plus
+      .plus-container
+         .plus-flex
+            +display(flex)
+            +justify-content(space-between)
+            +flex-wrap(wrap)
+
+            .plus-flexitem-flex
+               +flex(0 0 45%)
+               +align-items(center)
+               margin: 1rem 0px
+
+               .img
+                  +flex(0 0 60px)
+                  
+                  svg
+                     +size(55px)
+               
+               .text
+                  h3
+                     margin-bottom: .8rem
+                     
+            .clock .img svg
+               +size(45px)
+
+@media screen and (min-width: 992px)
+   #plus
+      .plus-container
+         .plus-flex
+            .plus-flexitem-flex
+               +flex-basis(30%)

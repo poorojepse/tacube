@@ -1,0 +1,56 @@
+#footer
+   background-color: $color-alt
+   
+   .container      
+      .footer-flex
+         +display(flex)
+         +flex-wrap(wrap)
+         +justify-content(space-between)
+            
+         .footer-flexitem
+            margin: 0px
+            +flex(0 1 47%)
+            color: $color-main
+            
+            .title
+               border-bottom: 1px solid $color-main
+            
+         .contact
+            order: 1
+            
+         .schedule
+            order: 1
+            
+   .copyright
+      background-color: $color-main
+      
+      .copyright-container
+         padding: .5rem 0px
+         color: $color-alt-dark
+         text-align: center
+            
+@media screen and (min-width: 768px)
+   #footer
+      .container
+         .footer-flex
+            margin: 0px -1rem
+            +justify-content(center)
+
+            .footer-flexitem
+               margin: 0px 1rem
+               +flex(0 1 45%)
+               
+            .contact, .schedule
+               order: initial
+                              
+@media screen and (min-width: 992px)
+   #footer
+      .container
+         .footer-flex
+            margin: 0px -1rem
+            +display(flex)
+            +flex-wrap(nowrap)
+            +justify-content(space-between)
+
+            .footer-flexitem
+               +flex(0 1 260px)
