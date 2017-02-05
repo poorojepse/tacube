@@ -1,0 +1,71 @@
+# Site Settings
+lang: 'en'
+author: 'AEDesign-Bohol'
+title: tacube
+sub-title: blah blah blah blah etc
+description: lorem ipsum
+keywords: loko-loko, kau
+
+# Site Info
+email: tacube@gmail.com
+website: tacube.com
+address: blah
+phone: 09543581321
+
+# Site Content
+banner: 'banner.png'
+
+social:
+- { title: 'twitter', link: '/'}
+- { title: 'facebook', link: '/'}
+
+nav:
+- { title: 'home', url: '/'}
+- { title: 'about', url: '/'}
+- { title: 'support', url: '/'}
+- { title: 'contact', url: '/'}
+
+bida:
+ title: 'Lorem ipsum dolor sit amet, consectetur'
+ link-caption: 'avail'
+ link: '\'
+ items:
+  - { blurb: 'alienum recteque cotidieque vix ei.' }
+  - { blurb: 'error vitae equidem per, pro eu.' }
+  - { blurb: 'paulo antiopam. Est no stet tollit, lorem eripuit.' }
+
+hero:
+ blurb: '"Lorem ipsum dolor sit amet, at pro nullam doctus perfecto. Elitr homero tempor usu an, omnis delenit pericula no has. Putant quaeque omnesque cu his"'
+
+assets:
+- { title: customer satisfaction, value: '100%' }
+- { title: years in business, value: '8' }
+- { title: cars models available, value: '8' }
+- { title: customer serves, value: '100+' }
+
+plus:
+- { title: years of experience,
+    blurb: 'Lorem ipsum dolor sit amet, eos tale agam aeque ne. An harum quidam bonorum vis', 
+    class: clock, 
+    img: clock }
+    
+- { title: expert staff,
+    blurb: 'Per te ludus impedit accusata, alienum recteque cotidieque',
+    img: staff }
+  
+- { title: excellent suppor,
+    blurb: 'vix ei. Est ne illum dicit senserit, ad error vitae equidem per', 
+    img: support }
+  
+- { title: affordable rates,
+    blurb: 'pro eu habemus tacimates pertinax. Mel te inimicus salutatus',
+    img: pig }
+  
+- { title: modern fleet of vehicles, 
+    blurb: 'In placerat quaestio has. Ut ius simul audire mediocrem, te eos ipsum',
+    img: ster-wheel }
+  
+- { title: safe and secure, 
+    blurb: 'reprehendunt. An pro cibo solum, an pri errem albucius. Modus numquam principes ei nam',
+    img: safe }
+  

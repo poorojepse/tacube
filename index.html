@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<section id='bida'>
+   <div class='container bida-container'>
+      <h1 class='title'>{{site.data.settings.bida.title}}</h1>
+      {% for item in site.data.settings.bida.items %}
+      <h2>{{item.blurb}}</h2>
+      {% endfor %}
+      <a class='avail' href='{{site.data.settings.bida.link}}'>{{site.data.settings.bida.link-caption}}</a>
+   </div>
+</section>
+
+<section id='hero'>
+   <div class='container hero-container'>
+      <p class='hero-blurb'>{{site.data.settings.hero.blurb}}</p>
+   </div>
+</section>
+
+<section id='asset'>
+   <div class='container asset-container'>
+      <div class='asset-flex'>
+         {% for item in site.data.settings.assets %}         
+         <div class='asset-flexitem'>
+            <h2 class='value'>{{item.value}}</h2>
+            <h3 class='key'>{{item.title}}</h3>            
+         </div>              
+         {% endfor %}  
+      </div>
+   </div>
+</section>
+
+<section id='plus'>
+   <div class='container plus-container'>
+      <div class='plus-flex'>
+         
+         {% for item in site.data.settings.plus %}
+         <div class='plus-flexitem-flex {{item.class}}'>
+            <div class='img'>
+               {% include icons/{{item.img}}.html %}
+            </div>
+            <div class='text'>
+               <h3>{{item.title}}</h3>
+               <p>{{item.blurb}}</p>
+            </div>         
+         </div> 
+         {% endfor %}
+         
+      </div>
+   </div>
+</section>
+
+<section id='reach-us'>
+   <div class='map'>
+      <iframe src='https://www.google.com/maps/d/embed?mid=1qQGFhnu7rIjOiVWARcxSj2sxw1E' allowfullscreen></iframe>
+   </div>
+   
+   <div class='contact-flex'>
+      <div class='contact-flexitem-flex'>
+         <div class='img'>
+            {% include icons/mark.html %}
+         </div>
+         <p class='text'>
+            13 Rafael Palma Street<br />Tagbilaran City, Bohol
+         </p>      
+      </div>
+      
+      <div class='contact-flexitem-flex'>
+         <div class='img'>
+            {% include icons/phone.html %}
+         </div>
+         <p class='text'>
+            13 Rafael Palma Street<br />Tagbilaran City, Bohol
+         </p>      
+      </div>
+      
+      <div class='contact-flexitem-flex'>
+         <div class='img'>
+            {% include icons/email.html %}
+         </div>
+         <p class='text'>
+            13 Rafael Palma Street<br />Tagbilaran City, Bohol
+         </p>      
+      </div>
+   </div>      
+</section>
