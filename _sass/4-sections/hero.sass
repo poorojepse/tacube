@@ -3,14 +3,21 @@
       max-width: 950px
          
       .hero-blurb
+         +position(relative)
          text-align: center
          font:
             size: 1.5rem
             style: italic
+         opacity: 0
+         left: 10%
+         +transition(1.5s $ease-out-expo)
+            
+         &.hero-animate
+            opacity: 1
+            left: 0px
      
-@media scree and (min-width: 768px)
+@media screen and (min-width: 768px)
    #hero
       .hero-container
          .hero-blurb
-            font:
-               size: 2rem
+            font-size: 2rem

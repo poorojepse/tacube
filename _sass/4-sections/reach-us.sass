@@ -22,18 +22,9 @@
          .img
             +display(inline-block)
             +size(60px)
-            text-align: center
-            white-space: nowrap
-               
-            &:before
-               content: ''
-               height: 100%
-               +display(inline-block)
-               vertical-align: middle
                         
             svg
                +size(42px)
-               vertical-align: middle
                fill: $color-alt
                
          .text
@@ -46,12 +37,15 @@
 @media screen and (min-width: 768px)
    #reach-us
       .contact-flex
-         +position(absolute, 0px 0px 0px null)
+         +position(absolute, 0px -350px 0px null)
          +size(350px auto)
          +display(flex)
          +flex-direction(column)
          +justify-content(center)
          padding: 0px
+         
+         opacity: 0
+         +transition(1.5s $ease-out-expo)
 
          .contact-flexitem-flex
             +display(flex)
@@ -69,3 +63,8 @@
 
                svg
                   fill: $color-main
+         
+      
+         &.contact-animate
+            opacity: 1
+            right: 0px

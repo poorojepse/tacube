@@ -32,7 +32,7 @@ bida:
  items:
   - { blurb: 'alienum recteque cotidieque vix ei.' }
   - { blurb: 'error vitae equidem per, pro eu.' }
-  - { blurb: 'paulo antiopam. Est no stet tollit, lorem eripuit.' }
+  - { blurb: 'paulo antiopam. Est stet tollit, eripuit.' }
 
 hero:
  blurb: '"Lorem ipsum dolor sit amet, at pro nullam doctus perfecto. Elitr homero tempor usu an, omnis delenit pericula no has. Putant quaeque omnesque cu his"'
