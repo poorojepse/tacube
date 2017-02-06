@@ -16,16 +16,36 @@
                +display(inline-block)
                line-height: 50px
                
+               opacity: 0
+               +transform(rotate(200deg))
+               right: 100%
+               +transition(1.5s $ease-out-expo)
+               
                &:before
                   content: ''
                   z-index: -1
                   border: 1px dashed $color-alt
                   +transform(rotate(45deg))
                   +position(absolute, 0px 0px 0px 0px)
-               
+
             .key
+               +position(relative)
                margin: 1.1rem 0px 0px
                color: $color-sub
+               
+               opacity: 0
+               right: 20%
+               +transition(1.5s $ease-out-expo)
+                  
+            &.asset-animate
+               .value
+                  right: 0px
+                  opacity: 1
+                  +transform(rotate(0deg))
+                     
+               .key
+                  opacity: 1
+                  right: 0
                
 @media screen and (min-width: 768px)
    #asset

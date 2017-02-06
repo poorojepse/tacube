@@ -10,29 +10,37 @@
 
             .img
                +flex(0 0 55px)
-               text-align: center
-               white-space: nowrap
                
-               &:before
-                  content: ''
-                  height: 100%
-                  vertical-align: middle
-                  +display(inline-block)
+               opacity: 0
+               +transition(2s)
                                  
                svg
                   +size(46px)
-                  vertical-align: middle
                   fill: $color-sub
 
             .text
+               +position(relative)
                margin-left: 10px
                
+               opacity: 0
+               left: 20%
+               +transition(1.5s $ease-out-expo)
+                  
                h3
                   color: $color-alt
                   margin-bottom: .1rem
                   
                p
                   margin: 0px
+                  
+            &.plus-animate
+               .img
+                  opacity: 1
+                  
+               .text
+                  opacity: 1
+                  left: 0px
+                  
                   
          .clock .img svg
             +size(40px)
