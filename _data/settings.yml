@@ -39,10 +39,10 @@ hero:
  blurb: '"Lorem ipsum dolor sit amet, at pro nullam doctus perfecto. Elitr homero tempor usu an, omnis delenit pericula no has. Putant quaeque omnesque cu his"'
 
 assets:
-- { title: customer satisfaction, value: '100%' }
-- { title: years in business, value: '8' }
-- { title: cars models available, value: '8' }
-- { title: customer serves, value: '100+' }
+- { title: client satisfaction, value: '100%' }
+- { title: years in business, value: '15' }
+- { title: cars models vacant, value: '22' }
+- { title: client serves, value: '50+' }
 
 plus:
 - { title: years of experience,
@@ -50,15 +50,15 @@ plus:
     class: clock, 
     img: clock }
     
-- { title: expert staff,
+- { title: skilled staff,
     blurb: 'Per te ludus impedit accusata, alienum recteque cotidieque',
     img: staff }
   
-- { title: excellent suppor,
+- { title: superb support,
     blurb: 'vix ei. Est ne illum dicit senserit, ad error vitae equidem per', 
     img: support }
   
-- { title: affordable rates,
+- { title: cheap rates,
     blurb: 'pro eu habemus tacimates pertinax. Mel te inimicus salutatus',
     img: pig }
   
@@ -66,7 +66,7 @@ plus:
     blurb: 'In placerat quaestio has. Ut ius simul audire mediocrem, te eos ipsum',
     img: ster-wheel }
   
-- { title: safe and secure, 
+- { title: security, 
     blurb: 'reprehendunt. An pro cibo solum, an pri errem albucius. Modus numquam principes ei nam',
     img: safe }
   
