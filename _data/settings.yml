@@ -22,9 +22,9 @@ social:
 
 nav:
 - { title: 'home', url: '/'}
-- { title: 'about', url: '/'}
-- { title: 'support', url: '/'}
-- { title: 'contact', url: '/'}
+- { title: 'about', url: '#hero'}
+- { title: 'advantage', url: '#plus'}
+- { title: 'contact', url: '#reach-us'}
 
 bida:
  title: 'Lorem ipsum dolor sit amet, consectetur'

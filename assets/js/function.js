@@ -1,10 +1,20 @@
 $(document).ready( function() {
-   
+   smoothScroll(800);
 });
 
 $(window).scroll( function() {
    animation();
 });
+
+function smoothScroll(duration) {
+   $("a[href^='#']").on('click', function() {
+      var $this = $(this),
+          target = $($this.attr('href'));
+      
+      event.preventDefault();
+      $('html, body').animate({scrollTop: target.offset().top}, duration);
+   })
+}
 
 function animation() {
    var st = $(window).scrollTop();
