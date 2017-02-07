@@ -21,7 +21,7 @@ social:
 - { title: 'facebook', link: '/'}
 
 nav:
-- { title: 'home', url: '/'}
+- { title: 'home', url: ''}
 - { title: 'about', url: '#hero'}
 - { title: 'advantage', url: '#plus'}
 - { title: 'contact', url: '#reach-us'}
