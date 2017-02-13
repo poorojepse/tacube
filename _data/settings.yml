@@ -1,14 +1,17 @@
 # Site Settings
 lang: 'en'
-author: 'AEDesign-Bohol'
-title: tacube
-sub-title: blah blah blah blah etc
-description: lorem ipsum
-keywords: loko-loko, kau
+theme: Tacube Theme 
+author: 'AEDesign'
+title: Tacube
+sub-title: 'AEDesign'
+description: 'This Theme was build only for practice purposes by AEDesign'
+keywords: 'Jekyll (Blog-aware, Static Site Generator) & Github, Github Pages & Website Design & PSD to HTML & Responsive Design & HTML, HTML5 &  CSS2, CSS3 & Js, Jquery & Sass/ SCSS & Adobe Photoshop & CMS for Static Site ( siteleaf, forestry, prose )'
+website: tacube.com
+website-url: https://poorojepse.github.io/tacube/
+
 
 # Site Info
 email: tacube@gmail.com
-website: tacube.com
 address: blah
 phone: 09543581321
 
@@ -17,8 +20,8 @@ banner: 'banner.png'
 favicon: 'favicon.ico'
 
 social:
-- { title: 'twitter', link: '/'}
-- { title: 'facebook', link: '/'}
+- { name: 'twitter', link: '/'}
+- { name: 'facebook', link: 'https://www.facebook.com/aedesignbohol/'}
 
 nav:
 - { title: 'home', url: ''}

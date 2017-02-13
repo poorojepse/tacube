@@ -2,11 +2,16 @@
 <html lang='{{site.data.settings.lang}}'>
 <head>
    <meta charset='utf-8'>
-   <title>Tacube</title>
+   <title>{{site.data.settings.title}} · {{site.data.settings.theme}} by {{site.data.settings.author}}</title>
+   <meta name='description' content='{{site.data.settings.theme}} · {{site.data.settings.description}}'>
+   <meta name='keywords' content='{{site.data.settings.keywords}}'>
+   <meta name='author' content='{{site.data.settings.author}}'>
+   <meta name='dcterms.rightHolder' content='{{site.url}}'>
    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link rel='canonical' href='{{site.url | replace: "index.html",""}}'>
    <link rel='stylesheet' href='{{site.baseurl}}/assets/css/main.css' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Khand:300,400' rel='stylesheet'>
-   <link href='shortcut icon' href='{{site.baseurl}}/{{site.data.settings.favicon}}'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Khand:300,400'>
+   <link rel='shortcut icon' href='{{site.baseurl}}/{{site.data.settings.favicon}}'>
 </head>
 <body>   
 <header>
@@ -19,8 +24,8 @@
 
             <div class='social'>
                {% for item in site.data.settings.social %}               
-               <a class='social-item' href='{{item.link}}'>
-                  {% include icons/{{item.title}}.html %}
+               <a class='social-item' href='{{item.link}}' target='_blank'>
+                  {% include icons/{{item.name}}.html %}
                </a>
                {% endfor %}
             </div>
