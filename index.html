@@ -66,22 +66,22 @@ layout: default
          </p>      
       </div>
       
-      <div class='contact-flexitem-flex'>
+      <a class='contact-flexitem-flex' href='tel:{{site.data.settings.phone}}'>
          <div class='img'>
             {% include icons/phone.html %}
          </div>
          <p class='text'>
-            Phone: 55 518 49 12<br /> 95 385 82 12
+            Phone: {{site.data.settings.phone}}
          </p>      
-      </div>
+      </a>
       
-      <div class='contact-flexitem-flex'>
+      <a class='contact-flexitem-flex' href='mailto:{{site.data.settings.email}}'>
          <div class='img'>
             {% include icons/email.html %}
          </div>
          <p class='text'>
-            tacube@yahoo.com<br />tacube92@gmail.com
+            Email: {{site.data.settings.email}}
          </p>      
-      </div>
+      </a>
    </div>      
 </section>
