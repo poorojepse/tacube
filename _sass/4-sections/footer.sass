@@ -26,6 +26,16 @@
    .copyright
       background-color: $color-main
       
+      a
+         @extend .smaller
+         line-height: 1
+         border-bottom: 1px dotted $color-alt-dark
+         +display(inline-block)
+         color: $color-alt-dark
+         
+         &:hover
+            color: darken($color-alt-dark, 15)
+      
       .copyright-container
          padding: .2rem 0px
          color: $color-alt-dark
